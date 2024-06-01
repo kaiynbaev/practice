@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Санаторий Шипа Су</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('source/DSC_0393\ 2.png') no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            
+            padding: 15px 50px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            text-align: center;
+        }
+        .main-content h1 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        .form-container {
+            display: flex;
+            gap: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .form-container input, .form-container button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-container input {
+            flex: 1;
+        }
+        .form-container button {
+            background: orange;
+            color: white;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background: darkorange;
+        }
+        .whatsapp-link {
+            margin-top: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .whatsapp-link:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .booking-button{
+            background: radial-gradient(circle at right, #133d53, #191953, #322583); 
+            width: 200px;
+            height: 20px;
+            border-radius: 30px;
+            padding: 15px 37px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            
+        }
+        .sector-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            text-align: center;
+        }
+        .main-3{
+            background-color: #FFF8F6;
+        }
+        .main-text{
+            font-family: Playfair Display;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 85.31px;
+            text-align: left;
+            width: 609px;
+            height: 85px;
+            top: 121px;
+            left: 217px;
+            gap: 0px;
+            opacity: 0px;
+            color: rgba(1, 1, 1, 1);
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h2 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-content p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: black;
+            
+        }
+        .comfort-nomer{
+            font-family: Playfair Display;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 39.99px;
+            text-align: left;
+            color: black;
+        }
+        .third-block{
+            background-color: #FFF8F6;
+            
+        }
+        .blocks{
+            display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Выравнивание карточек по верху */
+    gap: 20px; /* Расстояние между карточками */
+    flex-wrap: wrap; /* Перенос карточек на следующую строку при нехватке места */
+        }
+        .main-text{
+            margin-left: 100px;
+            padding-bottom: 100px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="source/Group 7 1.png" alt="Санаторий Шипа Су" style="height: 40px;">
+        </div>
+        <div class="menu">
+            <a href="#">Главная</a>
+            <a href="#">Лечение</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+            <a href="#" class="booking-button">Забронировать номер</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>ДОБРО ПОЖАЛОВАТЬ В ШИПА СУ!</h1>
+        <div class="form-container">
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Номер телефона">
+            <input type="text" placeholder="Примечание">
+            <button>Отправить</button>
+        </div>
+        <a href="https://wa.me/your-number" class="whatsapp-link">Написать сообщение</a>
+    </div>
+    <div class="sector-2">
+        <img src="source\Desktop - 2.png" alt="">
+    </div>
+    <div class="main-3">
+        <div class="main-text">
+            Что мы предлагаем?
+        </div>
+
+
+    </div>
+    <div class="third-block">
+        <div class="blocks">
+            <div class="card">
+                <img id="room-image" src="" alt="Comfort Room">
+                <div class="card-content">
+                    <h2>КОМФОРТНЫЕ НОМЕРА</h2>
+                    <p id="message"> .</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="room-image2" src="" alt="Comfort Room">
+                <div class="card-content">
+                    <h2>КОМФОРТНЫЕ НОМЕРА</h2>
+                    <p id="message2"> .</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="room-image3" src="" alt="Comfort Room">
+                <div class="card-content">
+                    <h2>КОМФОРТНЫЕ НОМЕРА</h2>
+                    <p id="message3"> .</p>
+                </div>
+            </div>
+
+    </div>
+
+        <!-- <div class="card">
+            <img src="source\B4rEJ09-Puo.png" alt="Comfort Room">
+            <div class="card-content">
+                <h2 class="comfort-nomer">КОМФОРТНЫЕ НОМЕРА</h2>
+                <p>Ваш комфорт - наши заботы<br>Свежий ремонт<br>Услужливый персонал</p>
+            </div>
+        </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
